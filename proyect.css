@@ -1,0 +1,43 @@
+
+
+
+
+body {
+  
+ 
+  background-color:rgb(210, 236, 247)
+}
+
+
+
+#title{
+    background-color: blue;
+    height: 100px;
+    font-size:80px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+#community{
+    cursor: pointer;
+    font: caption;
+
+
+}
+
+#province{
+    cursor: pointer;
+    font: caption;
+}
+
+#temperatura{
+    font: caption;
+
+}
+
+#ciudadesPrincipales{
+
+    font: caption;
+}
+
