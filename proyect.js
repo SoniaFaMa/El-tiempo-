@@ -10,7 +10,7 @@ let nonrepeatedNames = communityNames.filter((value, index, array) => array.inde
 
 nonrepeatedNames.sort();
 
-let tableBody = document.getElementById("community")
+let tableBody = document.querySelector(".community")
 
 
 
@@ -32,9 +32,9 @@ nonrepeatedNames.forEach((name) => {
 
 function funcionPrueba(communityName){
 
-   document.getElementById("community").style.display = "none";
+   document.querySelector(".community").style.display = "none";
 
-   let showProvince=document.getElementById("province")
+   let showProvince=document.querySelector(".province")
 
    
    let  communityProvinces=dates.provincias.filter((valor)=>{
@@ -72,7 +72,7 @@ function funcionPrueba(communityName){
 
 function allProvidence(selectProvince){
 
-   let showTempe=document.getElementById("temperatura")
+   let showTempe=document.querySelector(".temperature")
 
    showTempe.innerHTML= "Las temperaturas de las principales ciudades de la provincia de " + selectProvince 
 
@@ -112,9 +112,9 @@ function temperatures(num){
    .then((dates)=>{
       
    
-      document.getElementById("province").style.display = "none";
+      document.querySelector(".province").style.display = "none";
 
-      let showMainCities= document.getElementById("ciudadesPrincipales")
+      let showMainCities= document.querySelector(".mainCities")
 
       
 
@@ -132,7 +132,7 @@ function temperatures(num){
 
           showMainCities.appendChild(mainCities)
 
-          console.log(decode_utf8(nameCity))
+          
 
       })
    
