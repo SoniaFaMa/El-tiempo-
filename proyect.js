@@ -2,7 +2,7 @@ fetch("https://www.el-tiempo.net/api/json/v2/provincias")
 .then(response => response.json())
 .then((dates)=>{
 
-   console.log("holi")
+   
 
 let communityNames = dates.provincias.map(element => element.COMUNIDAD_CIUDAD_AUTONOMA);
 
@@ -118,15 +118,15 @@ function temperatures(num){
 
       
 
-      dates.ciudades.forEach((valor)=>{
+      dates.ciudades.forEach((value)=>{
          
 
          let mainCities=document.createElement("div")
 
-         let nameCity=valor.name
-         let temperatureMin=valor.temperatures.min
-         let temperatureMax=valor.temperatures.max
-         let stateHeaven= valor.stateSky.description
+         let nameCity=value.name
+         let temperatureMin=value.temperatures.min
+         let temperatureMax=value.temperatures.max
+         let stateHeaven= value.stateSky.description
 
           mainCities.innerHTML=`<br> ${nameCity}: <br> Temperatura minima: ${temperatureMin}º <br> Temperatura máxima: ${temperatureMax}º <br> Estado del cielo: ${stateHeaven}`
 
