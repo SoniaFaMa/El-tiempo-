@@ -82,7 +82,7 @@ function allProvidence(selectProvince){
 
 
 
-    let codigos=dates.provincias.filter((valor)=>{
+    let codes=dates.provincias.filter((valor)=>{
 
       let codeProvince=valor.CODPROV
 
