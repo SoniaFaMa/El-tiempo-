@@ -76,7 +76,7 @@ function allProvidence(selectProvince){
 
    showTempe.innerHTML= "Las temperaturas de las principales ciudades de la provincia de " + selectProvince 
 
-   console.log("se hizo click en la provincia: ", selectProvince)
+  
    
   
 
