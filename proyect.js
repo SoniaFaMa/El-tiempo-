@@ -80,7 +80,7 @@ function allProvidence(selectProvince){
    
   
 
-console.log(showTempe)
+
 
     let codigos=dates.provincias.filter((valor)=>{
 
