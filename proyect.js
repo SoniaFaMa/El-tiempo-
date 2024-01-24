@@ -2,7 +2,7 @@ fetch("https://www.el-tiempo.net/api/json/v2/provincias")
 .then(response => response.json())
 .then((dates)=>{
 
-   
+   console.log("holi")
 
 let communityNames = dates.provincias.map(element => element.COMUNIDAD_CIUDAD_AUTONOMA);
 
