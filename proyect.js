@@ -6,16 +6,16 @@ fetch("https://www.el-tiempo.net/api/json/v2/provincias")
 
 let communityNames = dates.provincias.map(element => element.COMUNIDAD_CIUDAD_AUTONOMA);
 
-let nonrepeatedNames = communityNames.filter((value, index, array) => array.indexOf(value) === index);
+let nonRepeatedNames = communityNames.filter((value, index, array) => array.indexOf(value) === index);
 
-nonrepeatedNames.sort();
+nonRepeatedNames.sort();
 
 let tableBody = document.querySelector(".community")
 
 
 
 
-nonrepeatedNames.forEach((name) => {
+nonRepeatedNames.forEach((name) => {
     let communities = document.createElement("div");
   
     communities.innerHTML = name;
