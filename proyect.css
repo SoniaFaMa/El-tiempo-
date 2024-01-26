@@ -5,6 +5,7 @@
 body {
 
   background-color:rgb(210, 236, 247)
+  
 }
 .community > div { 
     display: flex;
@@ -87,16 +88,39 @@ img{
    height: 100px;
    width: 200px;
    
+  
+   
 }
 
-.container-footer{
+.container-footer > div{
 display: flex;
- border-color: bisque;
- width: 100%;
- padding: 0px;
- margin: 5px;
- height: 100px;
+ cursor: pointer;
+ font: caption;
+ 
 
 
 }
+.container-footer{
+    display: flex;
+    background-color:azure;
+    border-radius: 5px;
+    border: 1px solid #080707;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+   
+}
 
+.container-footer > img{
+
+    display: flex;
+   
+}
+
+p{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
