@@ -8,18 +8,21 @@ body {
   
 }
 .community > div { 
+    height: 60px;
     display: flex;
     cursor: pointer;
     font: caption;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    border: 1px solid #999;
     text-align: center;
-    border-collapse: collapse;
-    margin: 0 0 1em 0; 
-    caption-side: top;
-    border-radius: 10px;
+    list-style-type: none;
+    counter-reset: li;
+    font-size: 1rem;
+    counter-increment: li;
+    content: counter(li, decimal-leading-zero);
+        color: black;
+        margin-right: 0.25em;
+    
 }
 .province > div{
     cursor: pointer;
@@ -124,3 +127,57 @@ p{
     
     
 }
+.main-footer {
+    display: flex;
+    padding: 1.5rem 1rem;
+    
+}
+footer {
+    display: flex;
+    background-color: #F4F5F2;
+    color: #6F6F6D;
+    padding: 1.5625rem 2.5%;
+    
+}
+footer .content h3 {
+    color: #6F6F6D;
+    display: flex;
+}
+
+.footer-links-about h3 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.00625rem;
+    font-weight: 700;
+    display: flex;
+}
+h3, .h3-simulated {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.3125rem;
+    padding-top: 0.625rem;
+    display: flex;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    display: flex;
+}
+.footer-links-about ul {
+    line-height: 2rem;
+    display: flex;
+}
+
+ul, ol {
+    list-style: none;
+    list-style-image: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+a {
+    color: #145BC7;
+    text-decoration: none;
+}
+ 
