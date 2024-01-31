@@ -83,6 +83,8 @@ body {
     background-color:white;
     border-radius: 10px;
     border: 3px solid #080707;
+    justify-content: space-between;
+    
 
 }
 .head{
@@ -92,23 +94,17 @@ body {
     font-size:40px ;
     font-family:Arial, Helvetica, sans-serif;
     align-items: center;
-    
+   
 
 }
-img{
-   display: flex;
-   height: 100px;
-   width: 200px;
-   
-   
-  
-   
-}
+
 
 .container-footer > div{
 display: flex;
  cursor: pointer;
  font: caption;
+ 
+ 
  
 
 
@@ -118,6 +114,8 @@ display: flex;
     background-color:azure;
     border-radius: 5px;
     border: 1px solid #080707;
+    justify-content: space-around;
+    
   
    
 }
@@ -125,6 +123,7 @@ display: flex;
 .container-footer > img{
 
     display: flex;
+    
    
 }
 
@@ -138,18 +137,17 @@ p{
 .main-footer {
     display: flex;
     padding: 1.5rem 1rem;
+    justify-content: center;
     
 }
 footer {
     display: flex;
-    background-color: #F4F5F2;
-    color: #6F6F6D;
     padding: 1.5625rem 2.5%;
     
     
 }
 footer .content h3 {
-    color: #6F6F6D;
+    
     display: flex;
     
 }
@@ -167,11 +165,13 @@ h3, .h3-simulated {
     margin-bottom: 0.3125rem;
     padding-top: 0.625rem;
     display: flex;
+    justify-content: center;
 }
 li {
     display: list-item;
     text-align: -webkit-match-parent;
     display: flex;
+    justify-content: space-between;
 }
 .footer-links-about ul {
     line-height: 2rem;
@@ -182,12 +182,22 @@ ul, ol {
     list-style: none;
     list-style-image: none;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    align-items: center;
+    
     
 }
 a {
     color: #145BC7;
     text-decoration: none;
+    
 }
+.screen-reader-only{
+
+    font-size:40px ;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
  
