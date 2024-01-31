@@ -23,41 +23,41 @@ nonRepeatedNames.forEach((name) => {
     tableBody.appendChild(communities);
    
     communities.addEventListener("click", function() {
-      funcionPrueba(name);
+      community(name);
     });
 
 
 });
 
 
-function funcionPrueba(communityName){
+function community(communityName){
 
    document.querySelector(".community").style.display = "none";
 
    let showProvince=document.querySelector(".province")
 
    
-   let  communityProvinces=dates.provincias.filter((valor)=>{
+   let  communityProvinces=dates.provincias.filter((value)=>{
 
      let provinceElement= document.createElement("div")
 
-     let communityAutonoma=valor.COMUNIDAD_CIUDAD_AUTONOMA
-     let provinceForal= valor.CAPITAL_PROVINCIA
+     let communityAutonomous=value.COMUNIDAD_CIUDAD_AUTONOMA
+     let capitalProvince= value.CAPITAL_PROVINCIA
 
     
 
-     if(communityAutonoma===communityName){
+     if(communityAutonomous===communityName){
 
-      provinceElement.innerHTML=provinceForal
+      provinceElement.innerHTML=capitalProvince
       showProvince.appendChild(provinceElement)
 
       provinceElement.addEventListener("click", function(){
 
-         allProvidence(provinceForal);
+         allProvidence(capitalProvince);
       })
 
 
-      return provinceForal
+      return capitalProvince
       
      }
 

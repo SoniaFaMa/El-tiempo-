@@ -25,29 +25,38 @@ body {
     
 }
 .province > div{
+    height: 60px;
+    display: flex;
     cursor: pointer;
     font: caption;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    border: 1px solid #999;
     text-align: center;
-    border-collapse: collapse;
-    margin: 0 0 1em 0; 
-    caption-side: top;
-    border-radius: 10px;
+    list-style-type: none;
+    counter-reset: li;
+    font-size: 1rem;
+    counter-increment: li;
+    content: counter(li, decimal-leading-zero);
+        color: black;
+        margin-right: 0.25em;
+    
+    
 }
 .temperature{
+    height: 60px;
+    display: flex;
+    cursor: pointer;
     font: caption;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    border: 1px solid #999;
     text-align: center;
-    border-collapse: collapse;
-    margin: 0 0 1em 0; 
-    caption-side: top;
-    border-radius: 10px;
+    list-style-type: none;
+    counter-reset: li;
+    font-size: 1rem;
+    counter-increment: li;
+    content: counter(li, decimal-leading-zero);
+        color: black;
+        margin-right: 0.25em;
 }
 
 
@@ -56,12 +65,12 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    border: 1px solid #999;
     text-align: center;
     border-collapse: collapse;
     margin: 0 0 1em 0; 
     caption-side: top;
     border-radius: 10px;
+    font-size: 1rem;
 }
 
 .container-head{
@@ -91,6 +100,7 @@ img{
    height: 100px;
    width: 200px;
    
+   
   
    
 }
@@ -108,9 +118,7 @@ display: flex;
     background-color:azure;
     border-radius: 5px;
     border: 1px solid #080707;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 50px;
+  
    
 }
 
@@ -138,10 +146,12 @@ footer {
     color: #6F6F6D;
     padding: 1.5625rem 2.5%;
     
+    
 }
 footer .content h3 {
     color: #6F6F6D;
     display: flex;
+    
 }
 
 .footer-links-about h3 {
